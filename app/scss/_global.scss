@@ -35,6 +35,10 @@ body {
     color: white;
 }
 
+main {
+    background-color: #0E1930;
+}
+
 .container {
     max-width: 1210px;
     width: 100%;
@@ -53,7 +57,7 @@ body {
     border: 1px solid transparent;
     transition: opacity, 0.2s;
 
-    &:hover{
+    &:hover {
         opacity: 0.7;
     }
 }
