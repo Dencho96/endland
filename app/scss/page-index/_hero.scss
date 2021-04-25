@@ -1,4 +1,39 @@
-.hero{
+.hero {
+    padding-top: 135px;
     height: 100vh;
     background: radial-gradient(94.84% 94.84% at 50% 2.78%, #1A3D48 0%, #0E1930 100%), #0E1930;
+
+    &__inner {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__box {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    &__title {
+        margin-bottom: 23px;
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    &__descr {
+        margin-bottom: 36px;
+        line-height: 22px;
+    }
+
+    &__btn {
+
+        &--about {
+            border-color: #00BF96;
+            background-color: transparent;
+
+        }
+
+        &+& {
+            margin-left: 19px;
+        }
+    }
 }
