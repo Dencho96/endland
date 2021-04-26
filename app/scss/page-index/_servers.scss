@@ -13,6 +13,11 @@
         border-radius: 20px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         background: linear-gradient(151.38deg, rgba(34, 45, 68, 0.42) 0.75%, rgba(136, 147, 172, 0) 100%);
+        transition: box-shadow 0.2s;
+
+        &:hover{
+            box-shadow: 0 0 5px #9EA1B3;
+        }
     }
 
     &__icon{

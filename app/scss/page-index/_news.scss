@@ -8,9 +8,12 @@
         }
     }
 
-    &__pic{
-        margin-right: 30px;
+    &__pic-link, &__pic{
         border-radius: 12px;
+    }
+
+    &__pic-link{
+        margin-right: 30px;
     }
 
     &__category{
