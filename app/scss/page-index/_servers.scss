@@ -1,11 +1,16 @@
 .servers {
     padding-bottom: 50px;
 
-    &__inner{
+    &__inner {
         justify-content: space-between;
+
+        @include maxw992 {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
     }
 
-    &__item{
+    &__item {
         padding: 32px 15px 36px;
         max-width: 279px;
         width: 100%;
@@ -15,12 +20,29 @@
         background: linear-gradient(151.38deg, rgba(34, 45, 68, 0.42) 0.75%, rgba(136, 147, 172, 0) 100%);
         transition: box-shadow 0.2s;
 
-        &:hover{
+        &:hover {
             box-shadow: 0 0 5px #9EA1B3;
+        }
+
+        @include maxw992 {
+            max-width: 45%;
+            margin-bottom: 20px;
+        }
+
+        @include maxw576 {
+            max-width: 90%;
+        }
+
+        &+& {
+            margin-left: 15px;
+
+            @include maxw992 {
+                margin-left: 0;
+            }
         }
     }
 
-    &__icon{
+    &__icon {
         margin: 0 auto 35px;
         width: 79px;
         height: 72px;
@@ -28,20 +50,20 @@
         background-size: contain;
     }
 
-    &__name{
+    &__name {
         margin-bottom: 16px;
         font-size: 24px;
         line-height: 28px;
         font-weight: 600;
     }
 
-    &__online{
+    &__online {
         margin-bottom: 12px;
         font-size: 20px;
         line-height: 24px;
     }
 
-    &__current-online{
+    &__current-online {
         color: #00BF96;
     }
 }

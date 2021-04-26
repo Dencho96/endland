@@ -65,6 +65,11 @@ main {
 .main-content {
     justify-content: space-between;
     padding-bottom: 67px;
+
+    @include maxw1205 {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .aside-block {
@@ -75,6 +80,11 @@ main {
 
     &+& {
         margin-top: 30px;
+    }
+
+    @include maxw1205 {
+        max-width: 500px;
+        width: 100%;
     }
 }
 

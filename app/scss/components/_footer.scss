@@ -6,10 +6,18 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+
+        @include maxw767 {
+            flex-direction: column;
+        }
     }
 
     &__list{
         margin-left: 50px;
+
+        @include maxw767 {
+            margin: 25px 0;
+        }
     }
 
     &__item {
@@ -28,6 +36,9 @@
         font-size: 14px;
         text-align: right;
         color: $gray;
-        
+
+        @include maxw767 {
+            text-align: center;
+        }
     }
 }

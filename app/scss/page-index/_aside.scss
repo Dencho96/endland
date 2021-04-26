@@ -3,6 +3,13 @@
     max-width: 328px;
     width: 100%;
 
+    @include maxw1205 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 90%;
+    }
+
     &__title {
         margin-bottom: 33px;
         font-size: 24px;
@@ -62,6 +69,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 15px;
+        text-align: center;
 
         &::before {
             content: "";
@@ -117,6 +125,10 @@
     &__answer-text,
     &__answer-info {
         font-size: 14px;
+
+        @include maxw576{
+            font-size: 12px;
+        }
     }
 
     &__answer-text {
