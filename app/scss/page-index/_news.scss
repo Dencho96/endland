@@ -23,7 +23,7 @@
         font-size: 14px;
         line-height: 19px;
         font-weight: 600;
-        color: #9EA1B3;
+        color: $gray;
     }
 
     &__title{
@@ -34,7 +34,7 @@
         transition: color, 0.2s;
 
         &:hover{
-            color: #00BF96;
+            color: $aqua;
         }
     }
 

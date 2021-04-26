@@ -39,7 +39,7 @@
 
     &__server-online {
         font-size: 14px;
-        color: #01BBA4;
+        color: $aqua;
     }
 
     &__server-info {
@@ -105,7 +105,7 @@
     &__answer-title, &__answer-name, &__social-name{
         transition: color 0.2s;
         &:hover{
-            color: #01BBA4;
+            color: $aqua;
         }
     }
 
@@ -131,7 +131,7 @@
     }
 
     &__answer-name {
-        color: #0097F4;
+        color: $blue;
     }
 
     &__social-item{

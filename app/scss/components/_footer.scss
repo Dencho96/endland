@@ -5,7 +5,7 @@
     &__inner {
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 56px;
+        margin-bottom: 20px;
     }
 
     &__list{
@@ -20,13 +20,14 @@
         }
 
         &:hover {
-            color: #01BBA4;
+            color: $aqua;
         }
     }
 
     &__copy {
         font-size: 14px;
         text-align: right;
-        color: #9EA1B3;
+        color: $gray;
+        
     }
 }
