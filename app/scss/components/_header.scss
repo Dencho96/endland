@@ -17,10 +17,10 @@
     }
 
     &__link {
-        transition: opacity, 0.2s;
+        transition: color, 0.2s;
 
         &:hover {
-            opacity: 0.8;
+            color: #01BBA4;
         }
 
         &+& {

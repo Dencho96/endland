@@ -1,0 +1,32 @@
+.footer {
+    padding: 42px 0 30px;
+    background-color: #18233A;
+
+    &__inner {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 56px;
+    }
+
+    &__list{
+        margin-left: 50px;
+    }
+
+    &__item {
+        transition: color 0.2s;
+
+        &+& {
+            margin-left: 36px;
+        }
+
+        &:hover {
+            color: #01BBA4;
+        }
+    }
+
+    &__copy {
+        font-size: 14px;
+        text-align: right;
+        color: #9EA1B3;
+    }
+}
